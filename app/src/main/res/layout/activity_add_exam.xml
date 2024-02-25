@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExam">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add Exam"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/examName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Exam Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/examDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Exam Date (e.g., MM/dd/yyyy)"
+        app:layout_constraintTop_toBottomOf="@+id/examName"
+        app:layout_constraintStart_toStartOf="@+id/examName"
+        app:layout_constraintEnd_toEndOf="@+id/examName"
+        android:layout_marginTop="16dp"
+        android:inputType="date"/>
+    <Button
+        android:id="@+id/addExamButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Exam"
+        app:layout_constraintTop_toBottomOf="@+id/examDate"
+        app:layout_constraintStart_toStartOf="@+id/examDate"
+        app:layout_constraintEnd_toEndOf="@+id/examDate"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

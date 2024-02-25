@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCourse">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Add Course"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <EditText
+        android:id="@+id/courseName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Course Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/instructorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Instructor Name"
+        app:layout_constraintTop_toBottomOf="@+id/courseName"
+        app:layout_constraintStart_toStartOf="@+id/courseName"
+        app:layout_constraintEnd_toEndOf="@+id/courseName"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/AddClassButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Class"
+        app:layout_constraintTop_toBottomOf="@+id/instructorName"
+        app:layout_constraintStart_toStartOf="@+id/instructorName"
+        app:layout_constraintEnd_toEndOf="@+id/instructorName"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/uploadRosterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Upload Class Roster (CSV)"
+        app:layout_constraintEnd_toEndOf="@+id/instructorName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/instructorName"
+        app:layout_constraintTop_toBottomOf="@+id/instructorName" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
