@@ -4,16 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".RegisterActivity">
 
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="95dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_width="160dp"
+        android:layout_height="130dp"
+        android:src="@drawable/removebg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
 
     <EditText
         android:id="@+id/name"
@@ -24,45 +29,63 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"/>
 
     <EditText
         android:id="@+id/registerUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@+id/name"
         app:layout_constraintStart_toStartOf="@+id/name"
         app:layout_constraintEnd_toEndOf="@+id/name"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="20dp"/>
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@+id/registerUsername"
         app:layout_constraintStart_toStartOf="@+id/registerUsername"
         app:layout_constraintEnd_toEndOf="@+id/registerUsername"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="20dp"/>
     <EditText
         android:id="@+id/reregisterPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="re-enter Password"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@+id/registerPassword"
         app:layout_constraintStart_toStartOf="@+id/registerPassword"
         app:layout_constraintEnd_toEndOf="@+id/registerPassword"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="20dp"/>
     <Button
         android:id="@+id/register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Register"
+        android:backgroundTint="#F4BC3F"
+        android:shadowColor="#fdb515"
         app:layout_constraintTop_toBottomOf="@+id/reregisterPassword"
         app:layout_constraintStart_toStartOf="@+id/reregisterPassword"
         app:layout_constraintEnd_toEndOf="@+id/reregisterPassword"
@@ -73,6 +96,8 @@
         android:layout_height="wrap_content"
         android:text="Already have an account? Login"
         app:layout_constraintTop_toBottomOf="@+id/register"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"/>

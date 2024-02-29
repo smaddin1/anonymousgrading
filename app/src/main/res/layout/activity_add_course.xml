@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".AddCourse">
 
     <TextView
@@ -11,10 +12,14 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Add Course"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095"/>
 
     <EditText
         android:id="@+id/courseName"
@@ -25,6 +30,8 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Course Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +42,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Instructor Name"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+
         app:layout_constraintTop_toBottomOf="@+id/courseName"
         app:layout_constraintStart_toStartOf="@+id/courseName"
         app:layout_constraintEnd_toEndOf="@+id/courseName"
@@ -44,6 +54,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Add Class"
+        android:backgroundTint="#F4BC3F"
         app:layout_constraintTop_toBottomOf="@+id/instructorName"
         app:layout_constraintStart_toStartOf="@+id/instructorName"
         app:layout_constraintEnd_toEndOf="@+id/instructorName"
@@ -55,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:text="Upload Class Roster (CSV)"
+        android:backgroundTint="#F4BC3F"
         app:layout_constraintEnd_toEndOf="@+id/instructorName"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/instructorName"
@@ -66,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="196dp"
         android:text="Home"
+        android:backgroundTint="#F4BC3F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"

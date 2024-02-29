@@ -4,27 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".AddExam">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Add Exam"
+        android:text="Add Exam +"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="80dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
 
     <EditText
         android:id="@+id/examName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="192dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Exam Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,21 +42,27 @@
         android:id="@+id/examDate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:hint="Exam Date (e.g., MM/dd/yyyy)"
-        app:layout_constraintTop_toBottomOf="@+id/examName"
-        app:layout_constraintStart_toStartOf="@+id/examName"
+        android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="@+id/examName"
-        android:layout_marginTop="16dp"
-        android:inputType="date"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/examName"
+        app:layout_constraintTop_toBottomOf="@+id/examName" />
+
     <Button
         android:id="@+id/addExamButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#F4BC3F"
         android:text="Add Exam"
-        app:layout_constraintTop_toBottomOf="@+id/examDate"
-        app:layout_constraintStart_toStartOf="@+id/examDate"
         app:layout_constraintEnd_toEndOf="@+id/examDate"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/examDate"
+        app:layout_constraintTop_toBottomOf="@+id/examDate" />
 
     <Button
         android:id="@+id/btnHome"
@@ -56,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="220dp"
         android:text="Home"
+        android:backgroundTint="#F4BC3F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.9"

@@ -2,7 +2,10 @@ package com.example.anonymousgrading;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class AddExam extends AppCompatActivity {
 
@@ -10,5 +13,15 @@ public class AddExam extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_exam);
+        Button toHomeButton = findViewById(R.id.btnHome);
+        toHomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Define the action to be performed when the button is clicked
+                // For example, you can start a new activity
+                Intent intent = new Intent(AddExam.this, AllToGO.class);
+                startActivity(intent);
+            }
+        });
     }
 }
