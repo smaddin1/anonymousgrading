@@ -19,44 +19,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/barcodeList"
-        android:layout_width="405dp"
-        android:layout_height="436dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="322dp"
+        android:layout_height="502dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barcodeMapTitle"
-        app:layout_constraintVertical_bias="0.005"
-        tools:listitem="@layout/barcode_list_item" />
+        app:layout_constraintVertical_bias="0.32">
 
-    <Button
-        android:id="@+id/addBarcodeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="144dp"
-        android:backgroundTint="#F4BC3F"
-        android:shadowColor="#fdb515"
-        android:text="Add Barcode"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <LinearLayout
+            android:id="@+id/barcodeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Dynamic TextViews will be added here -->
+        </LinearLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/btnHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#F4BC3F"
         android:shadowColor="#fdb515"
         android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent" />
 
 

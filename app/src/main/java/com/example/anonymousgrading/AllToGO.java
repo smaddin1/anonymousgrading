@@ -64,5 +64,16 @@ public class AllToGO extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button classeslistbutton = findViewById(R.id.button6);
+        classeslistbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Define the action to be performed when the button is clicked
+                // For example, you can start a new activity
+                Intent intent = new Intent(AllToGO.this, ClassList.class);
+                startActivity(intent);
+            }
+        });
     }
 }
